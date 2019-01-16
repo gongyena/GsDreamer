@@ -36,7 +36,7 @@
 	</script>		
 	</head>
 	<body>
-	 <form method="post" action="write_proc1.html" onsubmit="return chk_form(this)">
+	 <form method="post" action="write_proc1.php" onsubmit="return chk_form(this)">
 		<table border="1">
 			<tr>
 				<td>제목</td>
