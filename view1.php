@@ -1,5 +1,5 @@
 <?php
-include "php/dbcon1.php";
+include "dbcon1.php";
 $num = $_GET["num"];   //넘어온 인수(글번호)
 /*조회수 1증가하는 부분*/
 $sql = "UPDATE board SET view=view+1 WHERE num=$num";
