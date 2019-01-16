@@ -1,5 +1,5 @@
 <?php
-include "php/dbcon1.php";
+include "dbcon1.php";
 $num = $_GET["num"];
 $sql = "SELECT * FROM board where num=$num";
 $result = mysqli_query($conn, $sql);
