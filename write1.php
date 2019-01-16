@@ -13,7 +13,6 @@
 				vertical-aling:top;
 			}
 		</style>
-	<!--return false;는 form하는 이벤트를 취소(?)함-->
 	<script>
 		function chk_form(obj){
 			if(obj.subject.value==""){
@@ -37,16 +36,7 @@
 	</script>		
 	</head>
 	<body>
-	<!--보낼 내용은 form안에 있는 것만 전송됨
-	method="post"는 전송 방법임. get은 보내는 값을 다 보이게 post는 숨겨서 보냄!
-	action="write_proc.php"은 어디다 보내는 가를 지정한거임 :> 
-	onsubmit="return chk_form(this)" 에서 on은 이벤트(동작의 모든것) submit은 form안에 있는 값을
-	보내는 이벤트임, ondrag는 드래그 했을 때! form안에 있는 값을 보내는 이벤트를 행했을 때 ""안의 함수를 실행하는 거임!
-	chk_form는 그냥 함수 이름임.
-	Y-m-d에서 y, m, d는 소문자, 대문자인가 에 따라 값이 달라지만 Y: 2018, y-18
-	echo는 C언어로 치면 pritnf랑 비슷한 거임
-	-->
-	 <form method="post" action="write_proc.php" onsubmit="return chk_form(this)">
+	 <form method="post" action="write_proc1.php" onsubmit="return chk_form(this)">
 		<table border="1">
 			<tr>
 				<td>제목</td>
