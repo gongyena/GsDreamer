@@ -1,5 +1,5 @@
 <?php
-include "dbcon1.html";
+include "dbcon1.php";
 $num = $_GET["num"];
 $sql = "SELECT * FROM board where num=$num";
 $result = mysqli_query($conn, $sql);
@@ -45,7 +45,7 @@ mysqli_close($conn);
 	</script>		
 	</head>
 	<body>
-	<form method="post" action="edit_proc1.html">
+	<form method="post" action="edit_proc1.php">
 		<table border="1">
 			<tr>
 				<td>제목</td>
