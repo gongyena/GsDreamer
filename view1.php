@@ -1,5 +1,5 @@
 <?php
-include "php/dbcon.php";
+include "php/dbcon1.php";
 $num = $_GET["num"];   //넘어온 인수(글번호)
 /*조회수 1증가하는 부분*/
 $sql = "UPDATE board SET view=view+1 WHERE num=$num";
@@ -54,8 +54,8 @@ mysqli_close($conn);
 		<tr>
 			<td colspan="4">
 				<a href="first.html">목록</a>
-				<a href="edit.php?num=<?=$data["num"];?>">수정</a>
-				<a href="del.php?num=<?=$data["num"];?>">삭제</a>
+				<a href="edit1.php?num=<?=$data["num"];?>">수정</a>
+				<a href="del1.php?num=<?=$data["num"];?>">삭제</a>
 			</td>
 		</tr>
 	</table>
