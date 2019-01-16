@@ -1,5 +1,5 @@
 <?php
-include "dbcon1.html";
+include "dbcon1.php";
 $subject = $_POST["subject"];
 $id = $_POST["id"];
 $w_data = date["Y-m-d"];
