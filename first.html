@@ -23,7 +23,7 @@ if (mysqli_num_rows($result) > 0) {
 ?>
 			<tr><font size="2" color="#FFFFFF" face="HY나무">
 				<td><?php echo $row["num"];?></td>
-				<td><a href="view1.php?num=<?php echo $row["num"];?>">
+				<td><a href="view1.html?num=<?php echo $row["num"];?>">
 					<?php echo $row["subject"];?></a>
 				</td>
 				<td><?php echo $row["id"];?></td>
@@ -42,7 +42,7 @@ if (mysqli_num_rows($result) > 0) {
 				</td>
 			</font></tr>
 			<tr><font size="2" color="#FFFFFF" face="HY나무">
-				<td colspan="5"><a href="write1.php">글쓰기</a> </td>
+				<td colspan="5"><a href="write1.html">글쓰기</a> </td>
 			</font></tr>
 		    
 		</table></center>
