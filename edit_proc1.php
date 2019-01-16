@@ -1,5 +1,5 @@
 <?PHP
-include "php/dbcon1.php";
+include "dbcon1.php";
 $subject = $_POST["subject"];
 $pwd = $_POST["pwd"];
 $content = $_POST["content"];
